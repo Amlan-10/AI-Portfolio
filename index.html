@@ -5,68 +5,106 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AI Automation Portfolio</title>
+  <meta name="description"
+    content="Custom AI chatbots, smart automations, and intelligent tools that save time, reduce costs, and improve customer experience." />
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
 
-
   <!-- HERO SECTION -->
-<section class="hero">
-  <div class="hero-overlay"></div>
-  <div class="container hero-content">
-    <h1>I Build AI Systems That Automate Business Work</h1>
-    <p>AI chatbots, smart automations, and intelligent tools that save time, reduce costs, and improve customer experience.</p>
-    <div class="buttons">
-      <a href="#contact" class="btn primary">Get an AI Solution</a>
-      <a href="#projects" class="btn secondary">View My Work</a>
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="particles" id="particles"></div>
+    <div class="hero-content">
+      <span class="badge">🤖 AI-Powered Solutions</span>
+      <h1>I Build AI Systems That Automate Business Work</h1>
+      <p>AI chatbots, smart automations, and intelligent tools that save time, reduce costs, and improve customer
+        experience.</p>
+      <div class="buttons">
+        <a href="#contact" class="btn primary">Get an AI Solution</a>
+        <a href="#projects" class="btn secondary">View My Work</a>
+      </div>
     </div>
-  </div>
-</section>
-
-
-
-  <section class="demo-section">
-    <h2>Live AI Demo – Customer Support Chatbot</h2>
-    <p>This AI assistant handles customer questions for a restaurant business, including hours, reservations, and
-      dietary options.</p>
-
-    <iframe src="Ai-chatbot/index.html" class="chatbot-frame"></iframe>
   </section>
 
 
+  <!-- LIVE DEMO: CHATBOT -->
   <section class="demo-section">
-  <h2>Live AI Demo – Lead Qualification Assistant</h2>
-  <p>This AI assistant interacts with website visitors, understands their marketing needs, and collects qualified lead information automatically.</p>
+    <div class="reveal">
+      <h2>Live AI Demo – Customer Support Chatbot</h2>
+      <p>This AI assistant handles customer questions for a restaurant business, including hours, reservations, and
+        dietary options.</p>
+    </div>
+    <iframe src="Ai-chatbot/index.html" class="chatbot-frame reveal"></iframe>
+  </section>
 
- <iframe 
-  src="Ai-Lead-capture-bot/index.html" 
-  class="chatbot-frame">
-</iframe>
 
-</section>
+  <!-- LIVE DEMO: LEAD BOT -->
+  <section class="demo-section">
+    <div class="reveal">
+      <h2>Live AI Demo – Lead Qualification Assistant</h2>
+      <p>This AI assistant interacts with website visitors, understands their marketing needs, and collects qualified
+        lead information automatically.</p>
+    </div>
+    <iframe src="Ai-Lead-capture-bot/index.html" class="chatbot-frame reveal"></iframe>
+  </section>
 
+
+  <!-- LIVE APP: RECONOVA -->
+  <section class="demo-section">
+    <div class="reveal">
+      <h2>Live App – Reconova: AI-Powered Reconciliation SaaS</h2>
+      <p>Reconova automates financial reconciliation — upload transaction files, let AI match and flag discrepancies,
+        and export clean reports in seconds.</p>
+    </div>
+    <div class="app-showcase reveal">
+      <div class="app-preview-card">
+        <div class="app-icon">🔍</div>
+        <h3>Reconova</h3>
+        <p>Smart reconciliation platform for finance teams. Upload CSVs, auto-match transactions, and resolve exceptions
+          with AI assistance.</p>
+        <ul class="app-features">
+          <li>📂 Drag & drop file uploads</li>
+          <li>🤖 AI-powered transaction matching</li>
+          <li>📊 Real-time dashboard & analytics</li>
+          <li>📥 Export reconciled reports</li>
+        </ul>
+        <a href="https://reconova.vercel.app/dashboard" target="_blank" rel="noopener noreferrer"
+          class="btn primary app-link">Launch Reconova →</a>
+      </div>
+    </div>
+  </section>
 
 
   <!-- SERVICES SECTION -->
   <section class="services">
     <div class="container">
-      <h2>AI Services for Growing Businesses</h2>
-      <div class="grid">
+      <div class="reveal" style="text-align:center;">
+        <h2>AI Services for Growing Businesses</h2>
+        <p class="section-subtitle">From intelligent chatbots to full workflow automation — solutions built for real
+          business impact.</p>
+      </div>
+      <div class="grid reveal-stagger reveal">
         <div class="card">
+          <span class="card-icon">💬</span>
           <h3>AI Chatbots</h3>
           <p>24/7 chatbots that answer customer questions and capture leads automatically.</p>
         </div>
         <div class="card">
+          <span class="card-icon">⚙️</span>
           <h3>Workflow Automation</h3>
           <p>Automate repetitive tasks like emails, data entry, and follow-ups using AI.</p>
         </div>
         <div class="card">
+          <span class="card-icon">🎯</span>
           <h3>Lead Qualification</h3>
           <p>AI systems that collect and qualify leads so you focus on real prospects.</p>
         </div>
         <div class="card">
+          <span class="card-icon">📈</span>
           <h3>AI Insights & Reports</h3>
           <p>Turn your business data into smart dashboards and automated reports.</p>
         </div>
@@ -77,27 +115,46 @@
   <!-- PROJECTS / USE CASES -->
   <section id="projects" class="projects">
     <div class="container">
-      <h2>AI Use Cases</h2>
-
-      <div class="project">
-        <h3>AI Customer Support Bot</h3>
-        <p><strong>Problem:</strong> Businesses get repeated customer questions.</p>
-        <p><strong>Solution:</strong> AI chatbot that answers FAQs instantly.</p>
-        <p><strong>Result:</strong> Saves hours of manual support every week.</p>
+      <div class="reveal" style="text-align:center;">
+        <h2>AI Use Cases</h2>
+        <p class="section-subtitle">Real problems. AI-powered solutions. Measurable results.</p>
       </div>
 
-      <div class="project">
-        <h3>AI Lead Capture Assistant</h3>
-        <p><strong>Problem:</strong> Businesses miss potential leads.</p>
-        <p><strong>Solution:</strong> AI bot that collects visitor details and requirements.</p>
-        <p><strong>Result:</strong> More qualified leads automatically.</p>
+      <div class="reveal">
+        <div class="project">
+          <h3>AI Customer Support Bot</h3>
+          <p><strong>Problem:</strong> Businesses get repeated customer questions.</p>
+          <p><strong>Solution:</strong> AI chatbot that answers FAQs instantly.</p>
+          <p><strong>Result:</strong> Saves hours of manual support every week.</p>
+        </div>
       </div>
 
-      <div class="project">
-        <h3>AI Appointment Booking Bot</h3>
-        <p><strong>Problem:</strong> Manual scheduling wastes time.</p>
-        <p><strong>Solution:</strong> AI schedules meetings automatically.</p>
-        <p><strong>Result:</strong> Faster bookings and fewer missed clients.</p>
+      <div class="reveal">
+        <div class="project">
+          <h3>AI Lead Capture Assistant</h3>
+          <p><strong>Problem:</strong> Businesses miss potential leads.</p>
+          <p><strong>Solution:</strong> AI bot that collects visitor details and requirements.</p>
+          <p><strong>Result:</strong> More qualified leads automatically.</p>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="project">
+          <h3>AI Appointment Booking Bot</h3>
+          <p><strong>Problem:</strong> Manual scheduling wastes time.</p>
+          <p><strong>Solution:</strong> AI schedules meetings automatically.</p>
+          <p><strong>Result:</strong> Faster bookings and fewer missed clients.</p>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="project">
+          <h3>Reconova – AI Reconciliation SaaS</h3>
+          <p><strong>Problem:</strong> Finance teams spend hours manually reconciling transactions across systems.</p>
+          <p><strong>Solution:</strong> AI-powered platform that auto-matches transactions from uploaded files and flags
+            discrepancies.</p>
+          <p><strong>Result:</strong> Reconciliation time cut from hours to seconds with higher accuracy.</p>
+        </div>
       </div>
 
     </div>
@@ -106,8 +163,11 @@
   <!-- WHY WORK WITH ME -->
   <section class="why">
     <div class="container">
-      <h2>Why Work With Me</h2>
-      <ul>
+      <div class="reveal" style="text-align:center;">
+        <h2>Why Work With Me</h2>
+        <p class="section-subtitle">Reliable AI solutions, built with care.</p>
+      </div>
+      <ul class="reveal-stagger reveal">
         <li>✔ Custom AI solutions tailored to your business</li>
         <li>✔ Focus on real results, not just tech buzzwords</li>
         <li>✔ Clean integrations with your existing tools</li>
@@ -118,9 +178,9 @@
 
   <!-- CONTACT SECTION -->
   <section id="contact" class="contact">
-    <div class="container">
-      <h2>Let’s Automate Your Business with AI</h2>
-      <p>Tell me about your business and I’ll suggest AI solutions that can save time and improve efficiency.</p>
+    <div class="reveal">
+      <h2>Let's Automate Your Business with AI</h2>
+      <p>Tell me about your business and I'll suggest AI solutions that can save time and improve efficiency.</p>
       <a href="mailto:tribediamlan@gmail.com" class="btn primary">Contact Me</a>
     </div>
   </section>
@@ -128,6 +188,37 @@
   <footer>
     <p>© 2026 AI Automation Portfolio. All rights reserved.</p>
   </footer>
+
+  <!-- SCROLL REVEAL + PARTICLES JS -->
+  <script>
+    // Scroll reveal observer
+    const revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+    revealEls.forEach(el => observer.observe(el));
+
+    // Floating particles
+    const particlesContainer = document.getElementById('particles');
+    function createParticle() {
+      const p = document.createElement('div');
+      p.classList.add('particle');
+      p.style.left = Math.random() * 100 + '%';
+      p.style.width = p.style.height = (Math.random() * 4 + 2) + 'px';
+      p.style.animationDuration = (Math.random() * 8 + 6) + 's';
+      p.style.animationDelay = (Math.random() * 4) + 's';
+      p.style.opacity = Math.random() * 0.5 + 0.1;
+      particlesContainer.appendChild(p);
+      setTimeout(() => p.remove(), 16000);
+    }
+    setInterval(createParticle, 600);
+    for (let i = 0; i < 15; i++) createParticle();
+  </script>
 
 </body>
 
